@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Anthems</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{
+      background-color: #FFD5AF;
+      color: rgb(29, 12, 53);
+      text-decoration-color: rgb(29, 12, 53);
+      font-family: 'Roboto Mono', monospace;
+    }
+    #header {
+      color: #FFD5AF;
+      text-decoration-color: #FFD5AF;
+    }
+    h1, h2 {
+      margin-top: 3%;
+    }
+    countries:hover {
+      background-color: #c1634c;
+    }
+    #button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body class="text-center">
+  <div id="header" class="bg-orange-900 py-16 text-xl md:text-3xl lg:text-5xl underline">
+    <h1>Anthem Express</h1>
+  </div>
+  <div class="py-28 text-lg md:text-xl lg:text-2xl">
+    <h1 class="text-xl md:text-xl3 lg:text-5xl">Welcome To The Home Of National Anthems</h1>
+    <br>
+    <h2>Here, you can find the national anthems of all countries from all over the world!</h2>
+    <h2>Interested in the lyrics, or want to learn a new one?</h2>
+    <!--h2>You've come to the right place!</h2-->
+    <h2>Simply search for a country, and enjoy!</h2>
+  </div>
+  <div id="country" class="flex flex-col justify-center items-center">
+  <select id="countries" name="country"
+class="
+    text-center
+    w-5/6
+    md:w-1/2
+    lg:w-1/3
+    form-control
+    block
+    px-3
+    py-1.5
+    text-base
+    font-normal
+    text-gray-700
+    bg-gray-100 bg-clip-padding
+    border border-solid border-gray-300
+    rounded
+    transition
+    ease-in-out
+    m-0
+    focus:text-gray-700
+    focus:bg-white
+    focus:border-blue-600 
+    focus:outline-none">
+    <option>Select a country here!</option>
+    <option>England</option>
+    <option>Wales</option>
+    <option>Scotland</option>
+    <option>South Africa</option>
+  </select>
+</div>
+<div id="button" class="flex space-x-2 justify-center">
+  <button type="submit" 
+  class="
+  inline-block
+  px-6
+  py-2.5
+  bg-orange-900
+  text-white
+  font-medium
+  text-xs
+  leading-tight
+  uppercase rounded
+  shadow-md hover:bg-orange-600
+  hover:shadow-lg
+  focus:bg-burgundy
+  focus:shadow-lg
+  focus:outline-none
+  focus:ring-0
+  active:bg-orange-600
+  active:shadow-lg
+  transition
+  duration-150
+  ease-in-out">Enter</button>
+  </div>
+
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
