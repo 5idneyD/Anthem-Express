@@ -23,6 +23,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@prisma/client": "^4.2.1"
+		"@prisma/client": "^4.2.1",
+		"sqlite3": "^5.0.11"
 	}
 }

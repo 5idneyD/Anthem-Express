@@ -48,11 +48,11 @@ God save the Queen!
 
 db.serialize(() => {
 
-    db.run("CREATE TABLE anthems (country TEXT, name TEXT, words TEXT);");
+    db.run("CREATE TABLE anthems (country TEXT, name TEXT, words TEXT)");
 
-    db.run("INSERT INTO anthems VALUES ('England', 'God Save Our Queen','" + anthem +");");
+    db.run("INSERT INTO anthems VALUES ('England', 'God Save Our Queen',(?))", (anthem));
 
-    db.each("SELECT * FROM anthems;", (err, row) => {
+    db.each("SELECT * FROM anthems", (err, row) => {
         console.log(row.country + ": " + row.words);
     });
 });
