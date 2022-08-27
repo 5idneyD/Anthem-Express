@@ -2,19 +2,22 @@ import { error } from '@sveltejs/kit';
 import Database from "better-sqlite3";
 
 /** @type {import('./$types').PageLoad} */
-export function load( {params}) {
+export function load({ params }) {
 
-if (params.country="England"){
-  const db = new Database("src/mydb.db");
+  try {
+    const db = new Database("src/mydb.db");
+    console.log(params.country);
+    const anthem = db.prepare("SELECT * FROM anthems WHERE country='" + params.country + "'").get();
 
-  const rows = db.prepare("SELECT * FROM anthems").all();
+    console.log(anthem.words);
 
-  console.log(rows);
-
-  return {
-    
+    return {
+      country: anthem.country,
+      name: anthem.name,
+      lyrics: anthem.words
+    }
+  }
+  catch (e) {
+    throw error(404, 'Not found');
   }
 }
-  throw error(404, 'Not found');
-}
-
