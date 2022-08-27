@@ -19,9 +19,8 @@
 	"type": "module",
 	"dependencies": {
 		"aws-sdk": "^2.1204.0",
+		"better-sqlite3": "^7.6.2",
 		"mock-aws-s3": "^4.0.2",
-		"nock": "^13.2.9",
-		"sqlite3": "^5.0.11",
-		"util": "^0.12.4"
+		"nock": "^13.2.9"
 	}
 }
