@@ -13,7 +13,7 @@ export function load({ params }) {
 
     return {
       country: anthem.country,
-      name: anthem.name,
+      // name: anthem.name,
       lyrics: anthem.words
     }
   }

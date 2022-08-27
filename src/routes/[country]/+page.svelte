@@ -1,10 +1,8 @@
-
-
 <script>
     /** @type {import('./$types').PageData} */
     export let data;
     let country = data.country;
-    let name = data.name;
+    // let name = data.name;
     // let words = data.lyrics.replaceAll(",", ","+"<br>");
     let words = data.lyrics;
     console.log(words);
@@ -46,7 +44,7 @@
       <h1>The National Anthem of {country}</h1>
     </div>
     <div class="py-28 text-lg md:text:xl lg:text-2xl">
-<h3  class="underline">{name}</h3>
+<!-- <h3  class="underline">{name}</h3> -->
 <p style="white-space: pre-wrap;">{words}</p>
 </div>
 </body>
