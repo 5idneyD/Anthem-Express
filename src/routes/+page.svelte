@@ -20,9 +20,10 @@
 			rel="stylesheet"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
-		<style>
+    <script src="src/routes/customTailwind.js"></script>
+    <style>
 			body {
-				background-color: #ffd5af;
+				background-color: vanilla;
 				color: rgb(29, 12, 53);
 				text-decoration-color: rgb(29, 12, 53);
 				font-family: 'Roboto Mono', monospace;
@@ -43,7 +44,7 @@
 			}
 		</style>
 	</head>
-	<body class="text-center">
+	<body class="text-center bg-vanilla">
 		<div id="header" class="bg-orange-900 py-16 text-xl md:text-3xl lg:text-5xl underline">
 			<h1>Anthem Express</h1>
 		</div>
