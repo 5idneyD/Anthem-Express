@@ -6,7 +6,8 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"start": "vite build"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
