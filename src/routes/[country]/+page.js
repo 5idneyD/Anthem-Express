@@ -6,12 +6,15 @@ export function load({ params }) {
 
   try {
     const db = new Database("src/mydb.db");
-    console.log(params.country);
+    // console.log(params.country);
     const anthem = db.prepare("SELECT * FROM anthems WHERE country='" + params.country + "'").get();
 
-    console.log(anthem.words);
+    const countries = db.prepare("SELECT country FROM anthems").all();
+
+    // console.log(anthem.words);
 
     return {
+      countries: countries,
       country: anthem.country,
       // name: anthem.name,
       lyrics: anthem.words

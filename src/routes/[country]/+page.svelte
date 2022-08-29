@@ -1,6 +1,11 @@
 <script>
+
+import { loop_guard, query_selector_all } from 'svelte/internal';
+
+
 	/** @type {import('./$types').PageData} */
 	export let data;
+	let countries = data.countries;
 	let country = data.country;
 	// let name = data.name;
 	// let words = data.lyrics.replaceAll(",", ","+"<br>");
@@ -21,8 +26,10 @@
 		rel="stylesheet"
 	/>
 	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="src/routes/customTailwind.js"></script>
 	<style>
 		body {
+			background-color: vanilla;
 			color: rgb(29, 12, 53);
 			text-decoration-color: rgb(29, 12, 53);
 			font-family: 'Roboto Mono', monospace;
@@ -116,6 +123,75 @@
 		<!-- <h3  class="underline">{name}</h3> -->
 		<p style="white-space: pre-wrap;">{words}</p>
 	</div>
+	<div id="country" class="flex flex-col justify-center items-center">
+		<select
+			id="countries"
+			name="country"
+			onchange="changeLink()"
+			class="
+text-center
+w-5/6
+md:w-1/2
+lg:w-1/3
+form-control
+block
+px-3
+py-1.5
+text-base
+font-normal
+text-gray-700
+bg-gray-100 bg-clip-padding
+border border-solid border-gray-300
+rounded
+transition
+ease-in-out
+m-0
+focus:text-gray-700
+focus:bg-white
+focus:border-blue-600 
+focus:outline-none"
+		>
+			<option>Select a country here!</option>
+			{#each countries as country}
+				<option value={country}>
+					{country.country}
+				</option>
+			{/each}
+		</select>
+	</div>
+	<div id="button" class="flex space-x-2 justify-center">
+		<button
+			type="submit"
+			class="
+inline-block
+px-6
+py-2.5
+bg-orange-900
+text-white
+font-medium
+text-xs
+leading-tight
+uppercase rounded
+shadow-md hover:bg-orange-600
+hover:shadow-lg
+focus:bg-burgundy
+focus:shadow-lg
+focus:outline-none
+focus:ring-0
+active:bg-orange-600
+active:shadow-lg
+transition
+duration-150
+ease-in-out"><a id="link">Enter</a></button
+		>
+	</div>
+	<script>
+		function changeLink() {
+			var sel = document.getElementById('countries');
+			var text = sel.options[sel.selectedIndex].text;
+			var b = (document.getElementById('link').href = '/' + text);
+		}
+	</script>
 	<script>
 		function changeCSS() {
 			if (document.getElementById('checkBox').checked) {

@@ -44,6 +44,7 @@ import { loop_guard, query_selector_all } from 'svelte/internal';
 			}
 			#button {
 				margin-top: 10px;
+        margin-bottom: 5%;
 			}
 			.switch {
 				position: relative;
@@ -186,7 +187,6 @@ import { loop_guard, query_selector_all } from 'svelte/internal';
   ease-in-out"><a id="link">Enter</a></button
 			>
 		</div>
-		<script type="module" src="/src/main.ts"></script>
 		<script>
 			function changeLink() {
 				var sel = document.getElementById('countries');
