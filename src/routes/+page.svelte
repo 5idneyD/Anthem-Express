@@ -2,7 +2,7 @@
 	/** @type {import('./$types').PageData} */
 	export let data;
 	let countries = data.country;
-	console.log(countries);
+	// console.log(countries);
 </script>
 
 <!DOCTYPE html />
@@ -20,13 +20,14 @@
 			rel="stylesheet"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
-    <script src="src/routes/customTailwind.js"></script>
-    <style>
+		<script src="src/routes/customTailwind.js"></script>
+		<style>
 			body {
 				background-color: vanilla;
 				color: rgb(29, 12, 53);
 				text-decoration-color: rgb(29, 12, 53);
 				font-family: 'Roboto Mono', monospace;
+
 			}
 			#header {
 				color: #ffd5af;
@@ -42,13 +43,80 @@
 			#button {
 				margin-top: 10px;
 			}
+      .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 		</style>
 	</head>
 	<body class="text-center bg-vanilla">
 		<div id="header" class="bg-orange-900 py-16 text-xl md:text-3xl lg:text-5xl underline">
-			<h1>Anthem Express</h1>
+
+			<div class="grid grid-cols-9">
+				<label class="switch col-start-7 lg:col-start-8">
+					<input type="checkbox" unchecked />
+					<span class="slider round" />
+				</label>
+			</div>
+      			<h1>Anthem Express</h1>
 		</div>
-		<div class="py-28 text-lg md:text-xl lg:text-2xl">
+		<div class="py-28 text-lg md:text-xl lg:text-2xl" style="padding-left: 5%;
+    padding-right: 5%;">
 			<h1 class="text-xl md:text-xl3 lg:text-5xl">Welcome To The Home Of National Anthems</h1>
 			<br />
 			<h2>Here, you can find the national anthems of all countries from all over the world!</h2>
@@ -60,7 +128,7 @@
 			<select
 				id="countries"
 				name="country"
-        onchange="changeLink()"
+				onchange="changeLink()"
 				class="
     text-center
     w-5/6
@@ -120,11 +188,11 @@
 		</div>
 		<script type="module" src="/src/main.ts"></script>
 		<script>
-      function changeLink(){
-			var sel = document.getElementById('countries');
-      var text = sel.options[sel.selectedIndex].text;
-			var b = (document.getElementById('link').href = '/' + text);
-      }
+			function changeLink() {
+				var sel = document.getElementById('countries');
+				var text = sel.options[sel.selectedIndex].text;
+				var b = (document.getElementById('link').href = '/' + text);
+			}
 		</script>
 	</body>
 </html>

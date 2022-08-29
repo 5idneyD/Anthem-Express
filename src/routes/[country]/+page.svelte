@@ -5,7 +5,7 @@
     // let name = data.name;
     // let words = data.lyrics.replaceAll(",", ","+"<br>");
     let words = data.lyrics;
-    console.log(words);
+    // console.log(words);
       </script>
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       body{
-        background-color: #FFD5AF;
         color: rgb(29, 12, 53);
         text-decoration-color: rgb(29, 12, 53);
         font-family: 'Roboto Mono', monospace;
@@ -39,7 +38,7 @@
       }
     </style>
   </head>
-  <body class="text-center">
+  <body class="text-center bg-vanilla">
     <div id="header" class="bg-orange-900 py-16 text-xl md:text-3xl lg:text-5xl underline">
       <h1>The National Anthem of {country}</h1>
     </div>
