@@ -8,8 +8,7 @@ const config = {
 			hydrate: false,
 			router: false
 			
-		},
-		ssr: false
+		}
 	}
 
 };
