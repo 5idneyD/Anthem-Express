@@ -27,8 +27,8 @@ import { loop_guard, query_selector_all } from 'svelte/internal';
 		<style>
 			body {
 				background-color: #F3E5AB;
-				color: #ffd5af;
-				text-decoration-color: #ffd5af;
+				color: rgb(29, 12, 53);
+				text-decoration-color: rgb(29, 12, 53);
 				font-family: 'Roboto Mono', monospace;
 			}
 			#header {
