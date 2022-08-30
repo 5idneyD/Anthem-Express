@@ -9,7 +9,7 @@ const config = {
 			enabled: true,
 			onerror: 'continue',
 			pages: ["*"]
-		}
+		},
 		adapter: adapter(),
 		browser: {
 			hydrate: false,
