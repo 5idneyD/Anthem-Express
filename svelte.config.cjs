@@ -16,7 +16,7 @@
 // export default config;
 
 
-const sveltePreprocess = require('svelte-preprocess')
+const sveltePreprocess = require('@sveltejs/svelte-preprocess')
 const netlify = require('@sveltejs/adapter-netlify')
 const pkg = require('./package.json')
 
