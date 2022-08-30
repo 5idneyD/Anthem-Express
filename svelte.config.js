@@ -6,7 +6,8 @@ const config = {
 		adapter: adapter(),
 		browser: {
 			hydrate: false,
-			router: false
+			router: false,
+			ssr: false
 		}
 	}
 
