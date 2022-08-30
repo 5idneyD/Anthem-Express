@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 import Database from "better-sqlite3";
-export const prerender = true
+export const prerender = true;
 /** @type {import('./$types').PageLoad} */
 export function load({ params }) {
 
