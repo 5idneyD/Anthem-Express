@@ -7,7 +7,7 @@ const config = {
 		prerender: {
 			crawl: true,
 			enabled: true,
-			onerror: 'continue',
+			onError: 'continue',
 			pages: ["*"]
 		},
 		adapter: adapter(),
