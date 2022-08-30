@@ -10,7 +10,7 @@ const config = {
 			onError: "continue",
 			entries: [
 				'*',
-				'*/[country]',
+				'/England',
 			],
 			default: true
 		},
