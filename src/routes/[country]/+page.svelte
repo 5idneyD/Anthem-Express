@@ -29,7 +29,7 @@ import { loop_guard, query_selector_all } from 'svelte/internal';
 	<script src="src/routes/customTailwind.js"></script>
 	<style>
 		body {
-			background-color: vanilla;
+			background-color: #F3E5AB;
 			color: rgb(29, 12, 53);
 			text-decoration-color: rgb(29, 12, 53);
 			font-family: 'Roboto Mono', monospace;
@@ -109,7 +109,7 @@ import { loop_guard, query_selector_all } from 'svelte/internal';
 			}
 	</style>
 </head>
-<body class="text-center bg-vanilla">
+<body class="text-center">
 	<div id="header" class="bg-orange-900 py-16 text-xl md:text-3xl lg:text-5xl underline">
         <div class="grid grid-cols-9">
             <label class="switch col-start-7 lg:col-start-8">
