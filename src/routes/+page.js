@@ -1,9 +1,9 @@
 import { error } from '@sveltejs/kit';
 import Database from "better-sqlite3";
-export const prerender = true
+
 /** @type {import('./$types').PageLoad} */
 export function load({ params }) {
-
+  export const prerender = true
   try {
     const db = new Database("src/mydb.db");
     const countries = db.prepare("SELECT country FROM anthems").all();
