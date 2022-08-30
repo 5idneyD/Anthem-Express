@@ -8,7 +8,7 @@ const config = {
 			crawl: true,
 			enabled: true,
 			onError: "continue",
-			entries: ['*'],
+			entries: ['*', '/[country]/],
 			default: true
 		},
 			
