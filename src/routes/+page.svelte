@@ -1,6 +1,5 @@
 <script>
-import { loop_guard, query_selector_all } from 'svelte/internal';
-
+	import { loop_guard, query_selector_all } from 'svelte/internal';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -26,7 +25,7 @@ import { loop_guard, query_selector_all } from 'svelte/internal';
 		<script src="src/routes/customTailwind.js"></script>
 		<style>
 			body {
-				background-color: #F3E5AB;
+				background-color: #f3e5ab;
 				color: rgb(29, 12, 53);
 				text-decoration-color: rgb(29, 12, 53);
 				font-family: 'Roboto Mono', monospace;
@@ -44,7 +43,7 @@ import { loop_guard, query_selector_all } from 'svelte/internal';
 			}
 			#button {
 				margin-top: 10px;
-        margin-bottom: 5%;
+				margin-bottom: 5%;
 			}
 			.switch {
 				position: relative;
@@ -111,7 +110,7 @@ import { loop_guard, query_selector_all } from 'svelte/internal';
 		<div id="header" class="bg-orange-900 py-16 text-xl md:text-3xl lg:text-5xl underline">
 			<div class="grid grid-cols-9">
 				<label class="switch col-start-7 lg:col-start-8">
-					<input id="checkBox" type="checkbox" unchecked onchange="changeCSS()"/>
+					<input id="checkBox" type="checkbox" unchecked onchange="changeCSS()" />
 					<span class="slider round" />
 				</label>
 			</div>
@@ -197,29 +196,29 @@ import { loop_guard, query_selector_all } from 'svelte/internal';
 		<script>
 			function changeCSS() {
 				if (document.getElementById('checkBox').checked) {
-					var body = document.querySelector("body");
-          var header = document.querySelector("#header");
-          var button = document.querySelector("button");
-          body.style.backgroundColor = "#013328";
-          body.style.color = "#E3DCD2";
-          header.style.color =  "#013328";
-				  header.style.textDecorationColor = "#013328";
-          header.style.backgroundColor = "#CC8B65";
-          button.style.backgroundColor = "#CC8B65";
-          button.style.color = "#013328";
+					var body = document.querySelector('body');
+					var header = document.querySelector('#header');
+					var button = document.querySelector('button');
+					body.style.backgroundColor = '#013328';
+					body.style.color = '#E3DCD2';
+					header.style.color = '#013328';
+					header.style.textDecorationColor = '#013328';
+					header.style.backgroundColor = '#CC8B65';
+					button.style.backgroundColor = '#CC8B65';
+					button.style.color = '#013328';
 				} else {
-          var body = document.querySelector("body");
-          var header = document.querySelector("#header");
-          var button = document.querySelector("button");
-          body.style.backgroundColor = "#F3E5AB";
-          body.style.color = "rgb(29, 12, 53)";
-          header.style.color =  "#ffd5af";
-				  header.style.textDecorationColor = "#ffd5af";
-          header.style.backgroundColor = "#712E1E";
-          button.style.backgroundColor = "#712E1E";
-          button.style.color = "#ffd5af";
-        };
-			};
+					var body = document.querySelector('body');
+					var header = document.querySelector('#header');
+					var button = document.querySelector('button');
+					body.style.backgroundColor = '#F3E5AB';
+					body.style.color = 'rgb(29, 12, 53)';
+					header.style.color = '#ffd5af';
+					header.style.textDecorationColor = '#ffd5af';
+					header.style.backgroundColor = '#712E1E';
+					button.style.backgroundColor = '#712E1E';
+					button.style.color = '#ffd5af';
+				}
+			}
 		</script>
 	</body>
 </html>

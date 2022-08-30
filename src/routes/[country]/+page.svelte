@@ -1,7 +1,5 @@
 <script>
-
-import { loop_guard, query_selector_all } from 'svelte/internal';
-
+	import { loop_guard, query_selector_all } from 'svelte/internal';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -29,7 +27,7 @@ import { loop_guard, query_selector_all } from 'svelte/internal';
 	<script src="src/routes/customTailwind.js"></script>
 	<style>
 		body {
-			background-color: #F3E5AB;
+			background-color: #f3e5ab;
 			color: rgb(29, 12, 53);
 			text-decoration-color: rgb(29, 12, 53);
 			font-family: 'Roboto Mono', monospace;
@@ -48,75 +46,75 @@ import { loop_guard, query_selector_all } from 'svelte/internal';
 		#button {
 			margin-top: 10px;
 		}
-        .switch {
-				position: relative;
-				display: inline-block;
-				width: 60px;
-				height: 34px;
-			}
+		.switch {
+			position: relative;
+			display: inline-block;
+			width: 60px;
+			height: 34px;
+		}
 
-			.switch input {
-				opacity: 0;
-				width: 0;
-				height: 0;
-			}
+		.switch input {
+			opacity: 0;
+			width: 0;
+			height: 0;
+		}
 
-			.slider {
-				position: absolute;
-				cursor: pointer;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background-color: #ccc;
-				-webkit-transition: 0.4s;
-				transition: 0.4s;
-			}
+		.slider {
+			position: absolute;
+			cursor: pointer;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #ccc;
+			-webkit-transition: 0.4s;
+			transition: 0.4s;
+		}
 
-			.slider:before {
-				position: absolute;
-				content: '';
-				height: 26px;
-				width: 26px;
-				left: 4px;
-				bottom: 4px;
-				background-color: white;
-				-webkit-transition: 0.4s;
-				transition: 0.4s;
-			}
+		.slider:before {
+			position: absolute;
+			content: '';
+			height: 26px;
+			width: 26px;
+			left: 4px;
+			bottom: 4px;
+			background-color: white;
+			-webkit-transition: 0.4s;
+			transition: 0.4s;
+		}
 
-			input:checked + .slider {
-				background-color: #2196f3;
-			}
+		input:checked + .slider {
+			background-color: #2196f3;
+		}
 
-			input:focus + .slider {
-				box-shadow: 0 0 1px #2196f3;
-			}
+		input:focus + .slider {
+			box-shadow: 0 0 1px #2196f3;
+		}
 
-			input:checked + .slider:before {
-				-webkit-transform: translateX(26px);
-				-ms-transform: translateX(26px);
-				transform: translateX(26px);
-			}
+		input:checked + .slider:before {
+			-webkit-transform: translateX(26px);
+			-ms-transform: translateX(26px);
+			transform: translateX(26px);
+		}
 
-			/* Rounded sliders */
-			.slider.round {
-				border-radius: 34px;
-			}
+		/* Rounded sliders */
+		.slider.round {
+			border-radius: 34px;
+		}
 
-			.slider.round:before {
-				border-radius: 50%;
-			}
+		.slider.round:before {
+			border-radius: 50%;
+		}
 	</style>
 </head>
 <body class="text-center">
 	<div id="header" class="bg-orange-900 py-16 text-xl md:text-3xl lg:text-5xl underline">
-        <div class="grid grid-cols-9">
-            <label class="switch col-start-7 lg:col-start-8">
-                <input id="checkBox" type="checkbox" unchecked onchange="changeCSS()"/>
-                <span class="slider round" />
-            </label>
-        </div>
+		<div class="grid grid-cols-9">
+			<label class="switch col-start-7 lg:col-start-8">
+				<input id="checkBox" type="checkbox" unchecked onchange="changeCSS()" />
+				<span class="slider round" />
+			</label>
+		</div>
 		<h1>The National Anthem of {country}</h1>
 	</div>
 	<div class="py-28 text-lg md:text:xl lg:text-2xl">

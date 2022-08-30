@@ -1,6 +1,5 @@
 const sqlite3 = require('better-sqlite3');
 
-
 const db = new sqlite3('src/mydb.db');
 
 // var drop = db.prepare("DROP TABLE anthems");
@@ -51,24 +50,24 @@ To sing with heart and voice,
 God save the Queen!
 `;
 
-let country = "England";
-let name = "God Save The Queen";
+let country = 'England';
+let name = 'God Save The Queen';
 console.log(2);
-const create = db.exec("CREATE TABLE IF NOT EXISTS anthems (country TEXT, name TEXT, words TEXT)");
+const create = db.exec('CREATE TABLE IF NOT EXISTS anthems (country TEXT, name TEXT, words TEXT)');
 
-const insert = db.prepare('INSERT INTO anthems (country, name, words) VALUES (@country, @name, @words)');
+const insert = db.prepare(
+	'INSERT INTO anthems (country, name, words) VALUES (@country, @name, @words)'
+);
 const insertMany = db.transaction((songs) => {
-    for (const song of songs) insert.run(song);
-  });
+	for (const song of songs) insert.run(song);
+});
 
-insertMany([
-    { country: "England", name: "God Save the Queen", words: anthem},
-  ]);
+insertMany([{ country: 'England', name: 'God Save the Queen', words: anthem }]);
 
 console.log(5);
 
 // const drop = db.exec("DELETE FROM anthems");
-const rows = db.prepare("SELECT * FROM anthems").all();
+const rows = db.prepare('SELECT * FROM anthems').all();
 console.log(rows);
 
 db.close();
