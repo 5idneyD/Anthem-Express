@@ -1,5 +1,5 @@
 <script>
-	import { loop_guard, query_selector_all } from 'svelte/internal';
+	import { fix_position, loop_guard, query_selector_all } from 'svelte/internal';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -22,23 +22,22 @@
 			rel="stylesheet"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
-<!-- 		<script src="src/routes/customTailwind.js"></script> -->
+		<!-- 		<script src="src/routes/customTailwind.js"></script> -->
 		<style>
-		body {
-			background-color: #DDC3A5;
-			color: #201E20;
-			text-decoration-color: #201E20;
-			font-family: 'Roboto Mono', monospace;
-		}
-		#header {
-			background-color: #201E20;
-			color: #E0A96D;
-			text-decoration-color: #E0A96D;
-		}
-		#header {
-			color: #ffd5af;
-			text-decoration-color: #ffd5af;
-		}
+			body {
+				background-color: #ddc3a5;
+				color: #201e20;
+				text-decoration-color: #201e20;
+				font-family: 'Roboto Mono', monospace;
+				margin: 0;
+			}
+			#header {
+				background-color: #201e20;
+				color: #e0a96d;
+				text-decoration-color: #e0a96d;
+
+			}
+
 			h1,
 			h2 {
 				margin-top: 3%;
@@ -49,11 +48,10 @@
 			#button {
 				margin-top: 10px;
 				margin-bottom: 5%;
-
 			}
 			#actualButton {
-				background-color: #201E20;
-				color: #E0A96D;
+				background-color: #201e20;
+				color: #e0a96d;
 			}
 			.switch {
 				position: relative;
@@ -119,6 +117,9 @@
 	<body class="text-center">
 		<div id="header" class="py-16 text-2xl md:text-3xl lg:text-5xl underline">
 			<div class="grid grid-cols-9">
+				<div id="container" class="col-start-1">
+					<canvas id="canvas"></canvas>
+				</div>
 				<label class="switch col-start-7 lg:col-start-8">
 					<input id="checkBox" type="checkbox" unchecked onchange="changeCSS()" />
 					<span class="slider round" />
@@ -136,31 +137,34 @@
 		</div>
 		<div id="country" class="flex flex-col justify-center items-center">
 			<select
+			
 				id="countries"
 				name="country"
 				onchange="changeLink()"
 				class="
-    text-center
-    w-5/6
-    md:w-1/2
-    lg:w-1/3
-    form-control
-    block
-    px-3
-    py-1.5
-    text-base
-    font-normal
-    text-gray-700
-    bg-gray-100 bg-clip-padding
-    border border-solid border-gray-300
-    rounded
-    transition
-    ease-in-out
-    m-0
-    focus:text-gray-700
-    focus:bg-white
-    focus:border-blue-600 
-    focus:outline-none"
+			
+				text-center
+				w-5/6
+				md:w-1/2
+				lg:w-1/3
+				form-control
+				block
+				px-3
+				py-1.5
+				text-base
+				font-normal
+				text-gray-700
+				bg-gray-100 bg-clip-padding
+				border border-solid border-gray-300
+				rounded
+				transition
+				ease-in-out
+				m-0
+				focus:text-gray-700
+				focus:bg-white
+				focus:border-blue-600 
+				focus:outline-none"
+		
 			>
 				<option>Select a country here!</option>
 				{#each countries as country}
@@ -171,32 +175,35 @@
 			</select>
 		</div>
 		<div id="button" class="flex space-x-2 justify-center">
-			<button 
+			<button
 				id="actualButton"
 				type="submit"
 				class="
-  inline-block
-  px-6
-  py-2.5
-  text-white
-  font-medium
-  text-xs
-  leading-tight
-  uppercase rounded
-  shadow-md hover:bg-orange-600
-  hover:shadow-lg
-  focus:bg-burgundy
-  focus:shadow-lg
-  focus:outline-none
-  focus:ring-0
-  active:bg-orange-600
-  active:shadow-lg
-  transition
-  duration-150
-  ease-in-out"><a id="link">Enter</a></button
+				inline-block
+				px-6
+				py-2.5
+				text-white
+				font-medium
+				text-xs
+				leading-tight
+				uppercase rounded
+				shadow-md hover:bg-orange-600
+				hover:shadow-lg
+				focus:bg-burgundy
+				focus:shadow-lg
+				focus:outline-none
+				focus:ring-0
+				active:bg-orange-600
+				active:shadow-lg
+				transition
+				duration-150
+				ease-in-out"
 			>
+				<a id="link"> Enter </a>
+			</button>
 		</div>
 		<script>
+			// Dynamically determine the href for the button
 			function changeLink() {
 				var sel = document.getElementById('countries');
 				var text = sel.options[sel.selectedIndex].text;
@@ -204,6 +211,7 @@
 			}
 		</script>
 		<script>
+			// Change colours if toggle is pressed
 			function changeCSS() {
 				if (document.getElementById('checkBox').checked) {
 					var body = document.querySelector('body');
@@ -217,17 +225,60 @@
 					button.style.backgroundColor = '#CC8B65';
 					button.style.color = '#013328';
 				} else {
-				var body = document.querySelector('body');
-				var header = document.querySelector('#header');
-				var button = document.querySelector('button');
-				body.style.backgroundColor = '#DDC3A5';
-				body.style.color = '#201E20';
-				header.style.color = '#E0A96D';
-				header.style.textDecorationColor = '#E0A96D';
-				header.style.backgroundColor = '#201E20';
-				button.style.backgroundColor = '#201E20';
-				button.style.color = '#E0A96D';
+					var body = document.querySelector('body');
+					var header = document.querySelector('#header');
+					var button = document.querySelector('button');
+					body.style.backgroundColor = '#DDC3A5';
+					body.style.color = '#201E20';
+					header.style.color = '#E0A96D';
+					header.style.textDecorationColor = '#E0A96D';
+					header.style.backgroundColor = '#201E20';
+					button.style.backgroundColor = '#201E20';
+					button.style.color = '#E0A96D';
+				}
 			}
+		</script>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+		<script type="module">
+			import * as THREE from './node_modules/three/build/three.module.js';
+
+			let camera, scene, renderer;
+			let geometry, material, mesh;
+			var drawingSurface = document.getElementById( 'canvas' );
+			init();
+
+			function init() {
+				camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 0.01, 10);
+				camera.position.z = 1;
+
+
+				scene = new THREE.Scene();
+
+
+				geometry = new THREE.SphereGeometry(0.2, 32, 16);
+				material = new THREE.MeshBasicMaterial({
+					map: new THREE.TextureLoader().load('src/earth.jpg')
+				});
+
+				mesh = new THREE.Mesh(geometry, material);
+				scene.add(mesh);
+
+				renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true});
+				renderer.setClearColor = '0x000000';
+				renderer.setSize(800, 800);
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setAnimationLoop(animation);
+				// document.body.appendChild( renderer.domElement );
+				container.appendChild(renderer.domElement);
+			}
+
+			function animation(time) {
+				// mesh.rotation.x = time / 2000;
+				mesh.rotation.y = time / 1700;
+
+				renderer.render(scene, camera);
 			}
 		</script>
 	</body>

@@ -233,6 +233,11 @@ const config = {
 			hydrate: false,
 			router: false
 		}
+	},
+	server: {
+		fs: {
+			allow: ['static/earth.jpg']
+		}
 	}
 };
 
