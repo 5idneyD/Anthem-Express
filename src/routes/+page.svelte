@@ -25,14 +25,15 @@
 		<script src="src/routes/customTailwind.js"></script>
 		<style>
 			body {
-				background-color: #f3e5ab;
-				color: rgb(29, 12, 53);
-				text-decoration-color: rgb(29, 12, 53);
+				background-color: #FBEEC1;
+				color: #659DBD;
+				text-decoration-color: #659DBD;
 				font-family: 'Roboto Mono', monospace;
 			}
 			#header {
-				color: #ffd5af;
-				text-decoration-color: #ffd5af;
+				background-color: #659DBD;
+				color: #FBEEC1;
+				text-decoration-color: #FBEEC1;
 			}
 			h1,
 			h2 {
@@ -107,7 +108,7 @@
 		</style>
 	</head>
 	<body class="text-center">
-		<div id="header" class="bg-orange-900 py-16 text-xl md:text-3xl lg:text-5xl underline">
+		<div id="header" class="py-16 text-xl md:text-3xl lg:text-5xl underline">
 			<div class="grid grid-cols-9">
 				<label class="switch col-start-7 lg:col-start-8">
 					<input id="checkBox" type="checkbox" unchecked onchange="changeCSS()" />
@@ -210,13 +211,13 @@
 					var body = document.querySelector('body');
 					var header = document.querySelector('#header');
 					var button = document.querySelector('button');
-					body.style.backgroundColor = '#F3E5AB';
-					body.style.color = 'rgb(29, 12, 53)';
-					header.style.color = '#ffd5af';
-					header.style.textDecorationColor = '#ffd5af';
-					header.style.backgroundColor = '#712E1E';
-					button.style.backgroundColor = '#712E1E';
-					button.style.color = '#ffd5af';
+					body.style.backgroundColor = '#FBEEC1';
+					body.style.color = '#659DBD';
+					header.style.color = '#FBEEC1';
+					header.style.textDecorationColor = '#FBEEC1';
+					header.style.backgroundColor = '#659DBD';
+					button.style.backgroundColor = '#659DBD';
+					button.style.color = '#FBEEC1';
 				}
 			}
 		</script>
