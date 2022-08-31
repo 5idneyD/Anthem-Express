@@ -47,6 +47,9 @@
 				margin-bottom: 5%;
 
 			}
+			#actualButton {
+				background-color: #659DBD
+			}
 			.switch {
 				position: relative;
 				display: inline-block;
@@ -163,13 +166,13 @@
 			</select>
 		</div>
 		<div id="button" class="flex space-x-2 justify-center">
-			<button
+			<button 
+				id="actualButton"
 				type="submit"
 				class="
   inline-block
   px-6
   py-2.5
-  bg-orange-900
   text-white
   font-medium
   text-xs
