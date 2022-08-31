@@ -22,7 +22,7 @@
 			rel="stylesheet"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
-		<script src="src/routes/customTailwind.js"></script>
+<!-- 		<script src="src/routes/customTailwind.js"></script> -->
 		<style>
 			body {
 				background-color: #FBEEC1;
