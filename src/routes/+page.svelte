@@ -24,17 +24,21 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 <!-- 		<script src="src/routes/customTailwind.js"></script> -->
 		<style>
-			body {
-				background-color: #FBEEC1;
-				color: #659DBD;
-				text-decoration-color: #659DBD;
-				font-family: 'Roboto Mono', monospace;
-			}
-			#header {
-				background-color: #659DBD;
-				color: #FBEEC1;
-				text-decoration-color: #FBEEC1;
-			}
+		body {
+			background-color: #DDC3A5;
+			color: #201E20;
+			text-decoration-color: #201E20;
+			font-family: 'Roboto Mono', monospace;
+		}
+		#header {
+			background-color: #201E20;
+			color: #E0A96D;
+			text-decoration-color: #E0A96D;
+		}
+		#header {
+			color: #ffd5af;
+			text-decoration-color: #ffd5af;
+		}
 			h1,
 			h2 {
 				margin-top: 3%;
@@ -48,7 +52,8 @@
 
 			}
 			#actualButton {
-				background-color: #659DBD
+				background-color: #201E20;
+				color: #E0A96D;
 			}
 			.switch {
 				position: relative;
@@ -212,17 +217,17 @@
 					button.style.backgroundColor = '#CC8B65';
 					button.style.color = '#013328';
 				} else {
-					var body = document.querySelector('body');
-					var header = document.querySelector('#header');
-					var button = document.querySelector('button');
-					body.style.backgroundColor = '#FBEEC1';
-					body.style.color = '#659DBD';
-					header.style.color = '#FBEEC1';
-					header.style.textDecorationColor = '#FBEEC1';
-					header.style.backgroundColor = '#659DBD';
-					button.style.backgroundColor = '#659DBD';
-					button.style.color = '#FBEEC1';
-				}
+				var body = document.querySelector('body');
+				var header = document.querySelector('#header');
+				var button = document.querySelector('button');
+				body.style.backgroundColor = '#DDC3A5';
+				body.style.color = '#201E20';
+				header.style.color = '#E0A96D';
+				header.style.textDecorationColor = '#E0A96D';
+				header.style.backgroundColor = '#201E20';
+				button.style.backgroundColor = '#201E20';
+				button.style.color = '#E0A96D';
+			}
 			}
 		</script>
 	</body>
