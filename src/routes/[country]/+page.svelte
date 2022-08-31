@@ -27,25 +27,36 @@
 	<script src="src/routes/customTailwind.js"></script>
 	<style>
 		body {
-			background-color: #f3e5ab;
-			color: rgb(29, 12, 53);
-			text-decoration-color: rgb(29, 12, 53);
+			background-color: #DDC3A5;
+			color: #201E20;
+			text-decoration-color: #201E20;
 			font-family: 'Roboto Mono', monospace;
+		}
+		#header {
+			background-color: #201E20;
+			color: #E0A96D;
+			text-decoration-color: #E0A96D;
 		}
 		#header {
 			color: #ffd5af;
 			text-decoration-color: #ffd5af;
 		}
-		h1,
-		h2 {
-			margin-top: 3%;
-		}
-		countries:hover {
-			background-color: #c1634c;
-		}
-		#button {
-			margin-top: 10px;
-		}
+			h1,
+			h2 {
+				margin-top: 3%;
+			}
+			countries:hover {
+				background-color: #c1634c;
+			}
+			#button {
+				margin-top: 10px;
+				margin-bottom: 5%;
+
+			}
+			#actualButton {
+				background-color: #201E20;
+				color: #E0A96D;
+			}
 		.switch {
 			position: relative;
 			display: inline-block;
@@ -160,6 +171,7 @@ focus:outline-none"
 	<div id="button" class="flex space-x-2 justify-center">
 		<button
 			type="submit"
+			id="actualButton"
 			class="
 inline-block
 px-6
@@ -207,13 +219,13 @@ ease-in-out"><a id="link">Enter</a></button
 				var body = document.querySelector('body');
 				var header = document.querySelector('#header');
 				var button = document.querySelector('button');
-				body.style.backgroundColor = '#F3E5AB';
-				body.style.color = 'rgb(29, 12, 53)';
-				header.style.color = '#ffd5af';
-				header.style.textDecorationColor = '#ffd5af';
-				header.style.backgroundColor = '#712E1E';
-				button.style.backgroundColor = '#712E1E';
-				button.style.color = '#ffd5af';
+				body.style.backgroundColor = '#DDC3A5';
+				body.style.color = '#201E20';
+				header.style.color = '#E0A96D';
+				header.style.textDecorationColor = '#E0A96D';
+				header.style.backgroundColor = '#201E20';
+				button.style.backgroundColor = '#201E20';
+				button.style.color = '#E0A96D';
 			}
 		}
 	</script>
