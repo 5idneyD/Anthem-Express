@@ -112,14 +112,14 @@
 		</style>
 	</head>
 	<body class="text-center">
-		<div id="header" class="py-16 text-xl md:text-3xl lg:text-5xl underline">
+		<div id="header" class="py-16 text-2xl md:text-3xl lg:text-5xl underline">
 			<div class="grid grid-cols-9">
 				<label class="switch col-start-7 lg:col-start-8">
 					<input id="checkBox" type="checkbox" unchecked onchange="changeCSS()" />
 					<span class="slider round" />
 				</label>
 			</div>
-			<h1>Anthem Express</h1>
+			<h1>National Anthems</h1>
 		</div>
 		<div class="py-28 text-lg md:text-xl lg:text-2xl" style="padding-left: 5%; padding-right: 5%;">
 			<h1 class="text-xl md:text-xl3 lg:text-5xl">Welcome To The Home Of National Anthems</h1>
