@@ -45,7 +45,7 @@
 			#button {
 				margin-top: 10px;
 				margin-bottom: 5%;
-				background-color: #659DBD;
+
 			}
 			.switch {
 				position: relative;
