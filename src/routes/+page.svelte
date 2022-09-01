@@ -17,10 +17,8 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&family=Roboto+Mono:wght@400&display=swap"
-			rel="stylesheet"
-		/>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&family=Mukta:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
 		<script src="https://cdn.tailwindcss.com"></script>
 <!-- 		<script src="src/routes/customTailwind.js"></script> -->
 		<style>
@@ -34,6 +32,7 @@
 			background-color: #201E20;
 			color: #E0A96D;
 			text-decoration-color: #E0A96D;
+			font-family: "Mukta", sans-serif;
 		}
 		#header {
 			color: #ffd5af;
