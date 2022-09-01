@@ -221,8 +221,8 @@
 				var button = document.querySelector('button');
 				body.style.backgroundColor = '#DDC3A5';
 				body.style.color = '#201E20';
-				header.style.color = '#E0A96D';
-				header.style.textDecorationColor = '#E0A96D';
+				header.style.color = '#DDC3A5';
+				header.style.textDecorationColor = '#DDC3A5';
 				header.style.backgroundColor = '#201E20';
 				button.style.backgroundColor = '#201E20';
 				button.style.color = '#E0A96D';
