@@ -13,8 +13,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Home page to national anthems online website"/>
-		<meta name="keywords" content="National, Anthem, National Anthem"/>
+		<meta name="description" content="Home page to national anthems online website" />
+		<meta name="keywords" content="National, Anthem, National Anthem" />
 		<title>National Anthems</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,23 +24,23 @@
 			rel="stylesheet"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
-<!-- 		<script src="src/routes/customTailwind.js"></script> -->
+		<!-- 		<script src="src/routes/customTailwind.js"></script> -->
 		<style>
-		body {
-			background-color: #DDC3A5;
-			color: #201E20;
-			text-decoration-color: #201E20;
-			font-family: 'Roboto Mono', monospace;
-		}
-		#header {
-			background-color: #201E20;
-			color: #E0A96D;
-			text-decoration-color: #E0A96D;
-		}
-		#header {
-			color: #ffd5af;
-			text-decoration-color: #ffd5af;
-		}
+			body {
+				background-color: #ddc3a5;
+				color: #201e20;
+				text-decoration-color: #201e20;
+				font-family: 'Roboto Mono', monospace;
+			}
+			#header {
+				background-color: #201e20;
+				color: #e0a96d;
+				text-decoration-color: #e0a96d;
+			}
+			#header {
+				color: #ffd5af;
+				text-decoration-color: #ffd5af;
+			}
 			h1,
 			h2 {
 				margin-top: 3%;
@@ -51,11 +51,10 @@
 			#button {
 				margin-top: 10px;
 				margin-bottom: 5%;
-
 			}
 			#actualButton {
-				background-color: #201E20;
-				color: #E0A96D;
+				background-color: #201e20;
+				color: #e0a96d;
 			}
 			.switch {
 				position: relative;
@@ -116,17 +115,36 @@
 			.slider.round:before {
 				border-radius: 50%;
 			}
+
+			@media only screen and (max-width: 600px) {
+				#logo {
+					float: left;
+					margin-top: -25%;
+					margin-left: 6%;
+				}
+			}
+
+			@media only screen and (min-width: 601px) {
+				#logo {
+					float: left;
+					margin-top: -6%;
+					margin-left: 15%;
+				}
+			}
 		</style>
 	</head>
 	<body class="text-center">
-		<div id="header" class="py-16 text-2xl md:text-3xl lg:text-5xl underline">
+		<div id="header" class="py-16 text-2xl md:text-3xl lg:text-5xl underline align-items">
 			<div class="grid grid-cols-9">
 				<label class="switch col-start-7 lg:col-start-8">
 					<input id="checkBox" type="checkbox" unchecked onchange="changeCSS()" />
 					<span class="slider round" />
 				</label>
 			</div>
-			<h1>National Anthems</h1>
+			<div class="grid grid-cols-3">
+				<img id="logo" src="src/mylogo.png" alt="logo" class="scale-75 md:scale-100 col-start-1" />
+				<h1 class="col-start-2 text-align">National Anthems</h1>
+			</div>
 		</div>
 		<div class="py-28 text-lg md:text-xl lg:text-2xl" style="padding-left: 5%; padding-right: 5%;">
 			<h1 class="text-xl md:text-xl3 lg:text-5xl">Welcome To The Home Of National Anthems</h1>
@@ -173,7 +191,7 @@
 			</select>
 		</div>
 		<div id="button" class="flex space-x-2 justify-center">
-			<button 
+			<button
 				id="actualButton"
 				type="submit"
 				class="
@@ -219,17 +237,17 @@
 					button.style.backgroundColor = '#CC8B65';
 					button.style.color = '#013328';
 				} else {
-				var body = document.querySelector('body');
-				var header = document.querySelector('#header');
-				var button = document.querySelector('button');
-				body.style.backgroundColor = '#DDC3A5';
-				body.style.color = '#201E20';
-				header.style.color = '#E0A96D';
-				header.style.textDecorationColor = '#E0A96D';
-				header.style.backgroundColor = '#201E20';
-				button.style.backgroundColor = '#201E20';
-				button.style.color = '#E0A96D';
-			}
+					var body = document.querySelector('body');
+					var header = document.querySelector('#header');
+					var button = document.querySelector('button');
+					body.style.backgroundColor = '#DDC3A5';
+					body.style.color = '#201E20';
+					header.style.color = '#E0A96D';
+					header.style.textDecorationColor = '#E0A96D';
+					header.style.backgroundColor = '#201E20';
+					button.style.backgroundColor = '#201E20';
+					button.style.color = '#E0A96D';
+				}
 			}
 		</script>
 	</body>

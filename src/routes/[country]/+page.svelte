@@ -15,8 +15,8 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="National Anthem of {country}"/>
-	<meta name="keywords" content="National, Anthem, National Anthem, {country}"/>
+	<meta name="description" content="National Anthem of {country}" />
+	<meta name="keywords" content="National, Anthem, National Anthem, {country}" />
 	<title>National Anthems</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,36 +28,35 @@
 	<script src="https://cdn.tailwindcss.com"></script>
 	<style>
 		body {
-			background-color: #DDC3A5;
-			color: #201E20;
-			text-decoration-color: #201E20;
+			background-color: #ddc3a5;
+			color: #201e20;
+			text-decoration-color: #201e20;
 			font-family: 'Roboto Mono', monospace;
 		}
 		#header {
-			background-color: #201E20;
-			color: #E0A96D;
-			text-decoration-color: #E0A96D;
+			background-color: #201e20;
+			color: #e0a96d;
+			text-decoration-color: #e0a96d;
 		}
 		#header {
 			color: #ffd5af;
 			text-decoration-color: #ffd5af;
 		}
-			h1,
-			h2 {
-				margin-top: 3%;
-			}
-			countries:hover {
-				background-color: #c1634c;
-			}
-			#button {
-				margin-top: 10px;
-				margin-bottom: 5%;
-
-			}
-			#actualButton {
-				background-color: #201E20;
-				color: #E0A96D;
-			}
+		h1,
+		h2 {
+			margin-top: 3%;
+		}
+		countries:hover {
+			background-color: #c1634c;
+		}
+		#button {
+			margin-top: 10px;
+			margin-bottom: 5%;
+		}
+		#actualButton {
+			background-color: #201e20;
+			color: #e0a96d;
+		}
 		.switch {
 			position: relative;
 			display: inline-block;
