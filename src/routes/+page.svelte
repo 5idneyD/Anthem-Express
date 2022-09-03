@@ -24,7 +24,7 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<!-- 		<script src="src/routes/customTailwind.js"></script> -->
 		<style>
-<<<<<<< HEAD
+
 			body {
 				background-color: #ddc3a5;
 				color: #201e20;
@@ -57,7 +57,7 @@
 			color: #ffd5af;
 			text-decoration-color: #ffd5af;
 		}
->>>>>>> 435e49881a3f7f1413a758cee01a51705521eaa2
+
 			h1,
 			h2 {
 				margin-top: 3%;
