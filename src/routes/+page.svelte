@@ -254,7 +254,7 @@
 					button.style.backgroundColor = '#CC8B65';
 					button.style.color = '#013328';
 				} else {
-<<<<<<< HEAD
+
 					var body = document.querySelector('body');
 					var header = document.querySelector('#header');
 					var button = document.querySelector('button');
@@ -266,20 +266,6 @@
 					button.style.backgroundColor = '#201E20';
 					button.style.color = '#E0A96D';
 				}
-=======
-				var body = document.querySelector('body');
-				var header = document.querySelector('#header');
-				var button = document.querySelector('button');
-				body.style.backgroundColor = '#DDC3A5';
-				body.style.color = '#201E20';
-				header.style.color = '#DDC3A5';
-				header.style.textDecorationColor = '#DDC3A5';
-				header.style.backgroundColor = '#201E20';
-				button.style.backgroundColor = '#201E20';
-				button.style.color = '#E0A96D';
-			}
->>>>>>> 435e49881a3f7f1413a758cee01a51705521eaa2
-			}
 		</script>
 	</body>
 </html>
