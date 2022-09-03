@@ -19,13 +19,12 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&family=Roboto+Mono:wght@400&display=swap"
-			rel="stylesheet"
-		/>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&family=Mukta:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
 		<script src="https://cdn.tailwindcss.com"></script>
 		<!-- 		<script src="src/routes/customTailwind.js"></script> -->
 		<style>
+<<<<<<< HEAD
 			body {
 				background-color: #ddc3a5;
 				color: #201e20;
@@ -41,6 +40,24 @@
 				color: #ffd5af;
 				text-decoration-color: #ffd5af;
 			}
+=======
+		body {
+			background-color: #DDC3A5;
+			color: #201E20;
+			text-decoration-color: #201E20;
+			font-family: 'Roboto Mono', monospace;
+		}
+		#header {
+			background-color: #201E20;
+			color: #E0A96D;
+			text-decoration-color: #E0A96D;
+			font-family: "Mukta", sans-serif;
+		}
+		#header {
+			color: #ffd5af;
+			text-decoration-color: #ffd5af;
+		}
+>>>>>>> 435e49881a3f7f1413a758cee01a51705521eaa2
 			h1,
 			h2 {
 				margin-top: 3%;
@@ -237,6 +254,7 @@
 					button.style.backgroundColor = '#CC8B65';
 					button.style.color = '#013328';
 				} else {
+<<<<<<< HEAD
 					var body = document.querySelector('body');
 					var header = document.querySelector('#header');
 					var button = document.querySelector('button');
@@ -248,6 +266,19 @@
 					button.style.backgroundColor = '#201E20';
 					button.style.color = '#E0A96D';
 				}
+=======
+				var body = document.querySelector('body');
+				var header = document.querySelector('#header');
+				var button = document.querySelector('button');
+				body.style.backgroundColor = '#DDC3A5';
+				body.style.color = '#201E20';
+				header.style.color = '#DDC3A5';
+				header.style.textDecorationColor = '#DDC3A5';
+				header.style.backgroundColor = '#201E20';
+				button.style.backgroundColor = '#201E20';
+				button.style.color = '#E0A96D';
+			}
+>>>>>>> 435e49881a3f7f1413a758cee01a51705521eaa2
 			}
 		</script>
 	</body>
