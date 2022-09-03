@@ -15,6 +15,8 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="National Anthem of {country}"/>
+	<meta name="keywords" content="National, Anthem, National Anthem, {country}"/>
 	<title>National Anthems</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +26,6 @@
 		rel="stylesheet"
 	/>
 	<script src="https://cdn.tailwindcss.com"></script>
-	<script src="src/routes/customTailwind.js"></script>
 	<style>
 		body {
 			background-color: #DDC3A5;

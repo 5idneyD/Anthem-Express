@@ -13,6 +13,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Home page to national anthems online website"/>
+		<meta name="keywords" content="National, Anthem, National Anthem"/>
 		<title>National Anthems</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
