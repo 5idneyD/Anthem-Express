@@ -116,6 +116,22 @@
 		.slider.round:before {
 			border-radius: 50%;
 		}
+
+		@media only screen and (max-width: 600px) {
+			#logo {
+				float: left;
+				margin-top: -25%;
+				margin-left: 6%;
+			}
+		}
+
+		@media only screen and (min-width: 601px) {
+			#logo {
+				float: left;
+				margin-top: -6%;
+				margin-left: 15%;
+			}
+		}
 	</style>
 </head>
 <body class="text-center">
@@ -126,7 +142,15 @@
 				<span class="slider round" />
 			</label>
 		</div>
-		<h1>The National Anthem of {country}</h1>
+		<div class="grid grid-cols-3">
+			<img
+				id="logo"
+				src="/images/mylogo.png"
+				alt="logo"
+				class="scale-75 md:scale-100 col-start-1"
+			/>
+			<h1 class="col-start-2 text-align">The National Anthem of {country}</h1>
+		</div>
 	</div>
 	<div class="py-28 text-lg md:text:xl lg:text-2xl">
 		<!-- <h3  class="underline">{name}</h3> -->

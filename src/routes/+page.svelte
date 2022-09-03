@@ -19,12 +19,14 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&family=Mukta:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&family=Mukta:wght@300&family=Roboto+Mono:wght@300&display=swap"
+			rel="stylesheet"
+		/>
 
 		<script src="https://cdn.tailwindcss.com"></script>
 		<!-- 		<script src="src/routes/customTailwind.js"></script> -->
 		<style>
-
 			body {
 				background-color: #ddc3a5;
 				color: #201e20;
@@ -40,23 +42,22 @@
 				color: #ffd5af;
 				text-decoration-color: #ffd5af;
 			}
-=======
-		body {
-			background-color: #DDC3A5;
-			color: #201E20;
-			text-decoration-color: #201E20;
-			font-family: 'Roboto Mono', monospace;
-		}
-		#header {
-			background-color: #201E20;
-			color: #E0A96D;
-			text-decoration-color: #E0A96D;
-			font-family: "Mukta", sans-serif;
-		}
-		#header {
-			color: #ffd5af;
-			text-decoration-color: #ffd5af;
-		}
+			======= body {
+				background-color: #ddc3a5;
+				color: #201e20;
+				text-decoration-color: #201e20;
+				font-family: 'Roboto Mono', monospace;
+			}
+			#header {
+				background-color: #201e20;
+				color: #e0a96d;
+				text-decoration-color: #e0a96d;
+				font-family: 'Mukta', sans-serif;
+			}
+			#header {
+				color: #ffd5af;
+				text-decoration-color: #ffd5af;
+			}
 
 			h1,
 			h2 {
@@ -159,7 +160,12 @@
 				</label>
 			</div>
 			<div class="grid grid-cols-3">
-				<img id="logo" src="/images/mylogo.png" alt="logo" class="scale-75 md:scale-100 col-start-1" />
+				<img
+					id="logo"
+					src="/images/mylogo.png"
+					alt="logo"
+					class="scale-75 md:scale-100 col-start-1"
+				/>
 				<h1 class="col-start-2 text-align">National Anthems</h1>
 			</div>
 		</div>
