@@ -254,7 +254,6 @@
 					button.style.backgroundColor = '#CC8B65';
 					button.style.color = '#013328';
 				} else {
-
 					var body = document.querySelector('body');
 					var header = document.querySelector('#header');
 					var button = document.querySelector('button');
@@ -266,6 +265,7 @@
 					button.style.backgroundColor = '#201E20';
 					button.style.color = '#E0A96D';
 				}
+			}
 		</script>
 	</body>
 </html>
