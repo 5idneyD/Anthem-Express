@@ -159,7 +159,7 @@
 				</label>
 			</div>
 			<div class="grid grid-cols-3">
-				<img id="logo" src="src/mylogo.png" alt="logo" class="scale-75 md:scale-100 col-start-1" />
+				<img id="logo" src="/images/mylogo.png" alt="logo" class="scale-75 md:scale-100 col-start-1" />
 				<h1 class="col-start-2 text-align">National Anthems</h1>
 			</div>
 		</div>
