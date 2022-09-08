@@ -1,11 +1,6 @@
-<!-- <script>
-	import { loop_guard, query_selector_all } from 'svelte/internal';
-
-	/** @type {import('./$types').PageData} */
-	export let data;
-	let countries = data.country;
-	// console.log(countries);
-</script> -->
+<script>
+    import { page } from '$app/stores';
+  </script>
 
 <!DOCTYPE html />
 <html lang="en">
@@ -160,31 +155,24 @@
 				</label>
 			</div>
 			<div class="grid grid-cols-3">
-				<img
+				<a href="/"
+				><img
 					id="logo"
 					src="/images/mylogo.png"
 					alt="logo"
 					class="scale-75 md:scale-100 col-start-1"
-				/>
+				/></a
+			>
 				<h1 class="col-start-2 text-align">National Anthems</h1>
 			</div>
 		</div>
 		<div class="py-28 text-lg md:text-xl lg:text-2xl" style="padding-left: 5%; padding-right: 5%;">
-			<b><h2>Error</h2>
-            <h2>We Couldn't find this Page</h2>
+			<b><h2>Error {$page.status}: {$page.error.message}</h2>
             <h2>Either go back to your previous page</h2>
             <h2>Or Click on the logo to go home</h2>
             </b>
 		</div>
 		
-		
-		<script>
-			function changeLink() {
-				var sel = document.getElementById('countries');
-				var text = sel.options[sel.selectedIndex].text;
-				var b = (document.getElementById('link').href = '/' + text);
-			}
-		</script>
 		<script>
 			function changeCSS() {
 				if (document.getElementById('checkBox').checked) {
