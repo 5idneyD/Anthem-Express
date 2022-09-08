@@ -15,6 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Home page to national anthems online website" />
 		<meta name="keywords" content="National, Anthem, National Anthem" />
+		 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 		<title>National Anthems</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
