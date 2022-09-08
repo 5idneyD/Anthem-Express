@@ -143,12 +143,14 @@
 			</label>
 		</div>
 		<div class="grid grid-cols-3">
-			<a href="/"><img
-				id="logo"
-				src="/images/mylogo.png"
-				alt="logo"
-				class="scale-75 md:scale-100 col-start-1"
-			/></a>
+			<a href="/"
+				><img
+					id="logo"
+					src="/images/mylogo.png"
+					alt="logo"
+					class="scale-75 md:scale-100 col-start-1"
+				/></a
+			>
 			<h1 class="col-start-2 text-align">The National Anthem of {country}</h1>
 		</div>
 	</div>
