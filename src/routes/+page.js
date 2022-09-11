@@ -13,7 +13,7 @@ export function load({ params }) {
 	} catch (e) {
 		// throw error(404, 'Not found');
 		return {
-			e: new error(404, "Not found")
-		}
+			e: new error(404, 'Not found')
+		};
 	}
 }

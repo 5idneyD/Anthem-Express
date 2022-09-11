@@ -1,6 +1,6 @@
 <script>
-    import { page } from '$app/stores';
-  </script>
+	import { page } from '$app/stores';
+</script>
 
 <!DOCTYPE html />
 <html lang="en">
@@ -156,23 +156,24 @@
 			</div>
 			<div class="grid grid-cols-3">
 				<a href="/"
-				><img
-					id="logo"
-					src="/images/mylogo.png"
-					alt="logo"
-					class="scale-75 md:scale-100 col-start-1"
-				/></a
-			>
+					><img
+						id="logo"
+						src="/images/mylogo.png"
+						alt="logo"
+						class="scale-75 md:scale-100 col-start-1"
+					/></a
+				>
 				<h1 class="col-start-2 text-align">National Anthems</h1>
 			</div>
 		</div>
 		<div class="py-28 text-lg md:text-xl lg:text-2xl" style="padding-left: 5%; padding-right: 5%;">
-			<b><h2>Error {$page.status}: {$page.error.message}</h2>
-            <h2>Either go back to your previous page</h2>
-            <h2>Or Click on the logo to go home</h2>
-            </b>
+			<b
+				><h2>Error {$page.status}: {$page.error.message}</h2>
+				<h2>Either go back to your previous page</h2>
+				<h2>Or Click on the logo to go home</h2>
+			</b>
 		</div>
-		
+
 		<script>
 			function changeCSS() {
 				if (document.getElementById('checkBox').checked) {
