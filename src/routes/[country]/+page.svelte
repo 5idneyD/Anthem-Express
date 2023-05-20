@@ -194,7 +194,7 @@ focus:outline-none"
 			{/each}
 		</select>
 	</div>
-	<div id="button" class="flex space-x-2 justify-center" style="display: grid; grid-template-columns: auto; grid-template-rows: auto auto">
+	<div id="button" class="flex space-x-2 justify-center">
 		<button
 			type="submit"
 			id="actualButton"
