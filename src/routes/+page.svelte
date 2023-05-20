@@ -238,7 +238,8 @@
   duration-150
   ease-in-out"><a id="link">Enter</a></button
 			>
-			<h2>Sponsored by <a href="https://www.novariance.com">No Variance Accounting Software</a></h2>
+			<br />
+			<h2>Sponsored by <a href="https://www.novariance.com"><u>No Variance Accounting Software</u></a></h2>
 		</div>
 		<script>
 			function changeLink() {
