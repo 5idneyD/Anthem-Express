@@ -194,7 +194,7 @@ focus:outline-none"
 			{/each}
 		</select>
 	</div>
-	<div id="button" class="flex space-x-2 justify-center">
+	<div id="button" class="flex space-x-2 justify-center" style="display: grid; grid-template-columns: auto; grid-template-rows: auto auto">
 		<button
 			type="submit"
 			id="actualButton"
@@ -222,8 +222,9 @@ ease-in-out"><a id="link">Enter</a></button
 		>
 		<br />
 		</div>
+	<div>
 		<h2>Sponsored by <a href="https://www.novariance.com"><u>No Variance Accounting Software</u></a></h2>
-	
+	</div>
 	<script>
 		function changeLink() {
 			var sel = document.getElementById('countries');
