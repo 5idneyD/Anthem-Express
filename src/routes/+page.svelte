@@ -238,9 +238,12 @@
   duration-150
   ease-in-out"><a id="link">Enter</a></button
 			>
+			</div>
 			<br />
-			<h2>Sponsored by <a href="https://www.novariance.com"><u>No Variance Accounting Software</u></a></h2>
-		</div>
+				<div>
+		<h2>Sponsored by <a href="https://www.novariance.com"><u>No Variance Accounting Software</u></a></h2>
+	</div>
+		
 		<script>
 			function changeLink() {
 				var sel = document.getElementById('countries');
